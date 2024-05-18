@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:heap-size=41943040
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.ECE530FinalProject\:stack-size=1048576
+eclipse.preferences.version=1

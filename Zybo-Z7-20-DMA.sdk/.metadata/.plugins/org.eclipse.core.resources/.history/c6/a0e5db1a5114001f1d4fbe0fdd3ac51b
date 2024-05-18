@@ -1,0 +1,9 @@
+
+#ifndef CUSTOM_H
+#define CUSTOM_H
+
+void apply_echo(uint_32 delay_ms, float decay);
+void apply_reverb(uint_32 delay_ms, float decay);
+void process_buffer(void);
+
+#endif

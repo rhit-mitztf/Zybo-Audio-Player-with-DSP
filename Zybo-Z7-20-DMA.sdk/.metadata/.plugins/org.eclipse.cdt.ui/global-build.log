@@ -1,0 +1,336 @@
+11:01:15 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:01:19 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:01:50 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:16:56 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+../src/audio/audio.c: In function 'fnInitAudio':
+../src/audio/audio.c:341:11: warning: implicit declaration of function 'fnAudioPllConfig'; did you mean 'fnAudioPlay'? [-Wimplicit-function-declaration]
+  Status = fnAudioPllConfig();
+           ^~~~~~~~~~~~~~~~
+           fnAudioPlay
+'Finished building: ../src/audio/audio.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+./src/audio/audio.o: In function `fnInitAudio':
+C:\ECE530Labs\Project_Stuff\term_proj_new\vivado_proj\Zybo-Z7-20-DMA.sdk\ECE530FinalProject\Debug/../src/audio/audio.c:341: undefined reference to `fnAudioPllConfig'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:47: ECE530FinalProject.elf] Error 1
+11:17:35 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+../src/audio/audio.c: In function 'fnAudioPllConfig':
+../src/audio/audio.c:146:29: error: 'R0_CLOCK_CONTROL' undeclared (first use in this function); did you mean 'R18_ALC_CONTROL_2'?
+  Status = fnAudioWriteToReg(R0_CLOCK_CONTROL, 0x0E);
+                             ^~~~~~~~~~~~~~~~
+                             R18_ALC_CONTROL_2
+../src/audio/audio.c:146:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/audio/subdir.mk:20: src/audio/audio.o] Error 1
+11:17:42 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/custom/custom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/custom/custom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/custom/custom.d" -MT"src/custom/custom.o" -o "src/custom/custom.o" "../src/custom/custom.c"
+'Finished building: ../src/custom/custom.c'
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+../src/audio/audio.c: In function 'fnAudioPllConfig':
+../src/audio/audio.c:146:29: error: 'R0_CLOCK_CONTROL' undeclared (first use in this function); did you mean 'R18_ALC_CONTROL_2'?
+  Status = fnAudioWriteToReg(R0_CLOCK_CONTROL, 0x0E);
+                             ^~~~~~~~~~~~~~~~
+                             R18_ALC_CONTROL_2
+../src/audio/audio.c:146:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/audio/subdir.mk:20: src/audio/audio.o] Error 1
+11:19:51 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+'Finished building: ../src/audio/audio.c'
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'main':
+../src/demo.c:288:8: warning: unused variable 'toggle' [-Wunused-variable]
+  short toggle = 0;
+        ^~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121068	   3544	43002944	43127556	2921304	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+11:20:28 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+'Finished building: ../src/audio/audio.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121068	   3544	43002944	43127556	2921304	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+11:20:37 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:22:01 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/custom/custom.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/custom/custom.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/custom/custom.d" -MT"src/custom/custom.o" -o "src/custom/custom.o" "../src/custom/custom.c"
+'Finished building: ../src/custom/custom.c'
+' '
+'Building file: ../src/audio/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio/audio.d" -MT"src/audio/audio.o" -o "src/audio/audio.o" "../src/audio/audio.c"
+'Finished building: ../src/audio/audio.c'
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'main':
+../src/demo.c:288:8: warning: unused variable 'toggle' [-Wunused-variable]
+  short toggle = 0;
+        ^~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121068	   3544	43002944	43127556	2921304	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+11:24:00 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'main':
+../src/demo.c:288:8: warning: unused variable 'toggle' [-Wunused-variable]
+  short toggle = 0;
+        ^~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121068	   3544	43002944	43127556	2921304	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+11:24:05 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:25:11 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'main':
+../src/demo.c:288:8: warning: unused variable 'toggle' [-Wunused-variable]
+  short toggle = 0;
+        ^~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121068	   3544	43002944	43127556	2921304	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+11:25:16 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:33:34 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:34:21 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:41:02 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'main':
+../src/demo.c:288:8: warning: unused variable 'toggle' [-Wunused-variable]
+  short toggle = 0;
+        ^~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121084	   3544	43002944	43127572	2921314	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+16:41:18 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:42:42 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'main':
+../src/demo.c:289:8: warning: unused variable 'toggle' [-Wunused-variable]
+  short toggle = 0;
+        ^~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121124	   3544	43002944	43127612	292133c	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
+16:42:55 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:44:13 **** Incremental Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:18:28 **** Auto Build of configuration Debug for project ECE530FinalProject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ECE530FinalProject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:47:0:
+../../ECE530FinalProject_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: ECE530FinalProject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ECE530FinalProject_bsp/ps7_cortexa9_0/lib -o "ECE530FinalProject.elf"  ./src/userio/userio.o  ./src/intc/intc.o  ./src/iic/iic.o  ./src/dma/dma.o  ./src/custom/custom.o  ./src/audio/audio.o  ./src/demo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE530FinalProject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ECE530FinalProject.elf  |tee "ECE530FinalProject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121348	   3544	43002944	43127836	292141c	ECE530FinalProject.elf
+'Finished building: ECE530FinalProject.elf.size'
+' '
